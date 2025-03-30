@@ -1,4 +1,4 @@
-# The Ultimate Tic Tac Toe Player Bot - with Reinforcement Learning
+# The Ultimate Tic Tac Toe Player Bot - with Reinforcement Learning (Python 3)
 
 Reinforcement Learning based [Ultimate Tic Tac Toe](https://en.wikipedia.org/wiki/Ultimate_tic-tac-toe) player
 
@@ -19,8 +19,8 @@ pip install ultimate-ttt-rl
 Or you can install from source:
 
 ```bash
-git clone https://github.com/yourname/ultimate-ttt-rl.git
-cd ultimate-ttt-rl
+git clone https://github.com/dyinghorizon/ultimate-utt-py3-rl.git
+cd ultimate-utt-py3-rl
 pip install -e .
 ```
 
