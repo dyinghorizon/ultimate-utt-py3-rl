@@ -119,14 +119,18 @@ import random
 from ultimate_ttt_rl.ultimateplayer import RLUTTTPlayer
 
 class MyLearningModel(GenericLearning):
-   def getBoardStateValue(self, player, board, boardState):
-       # Your implementation here
-       value = random.uniform(0, 1) # As an example (and a very poor one)
-       return value   # Must be a numeric value
+    def __init__(self, DecisionClass):
+        self.DecisionClass = DecisionClass
+        # Initialize any other needed variables
+        
+    def getBoardStateValue(self, player, board, boardState):
+        # Your implementation here
+        value = random.uniform(0, 1) # As an example (and a very poor one)
+        return value   # Must be a numeric value
    
-   def learnFromMove(self, player, board, prevBoardState):
-       # Your implementation here - learn some value for the previousBoardState
-       pass
+    def learnFromMove(self, player, board, prevBoardState):
+        # Your implementation here - learn some value for the previousBoardState
+        pass
 
 learningModel = MyLearningModel(UTTTBoardDecision)
 learningPlayer = RLUTTTPlayer(learningModel)
